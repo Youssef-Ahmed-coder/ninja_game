@@ -1,0 +1,208 @@
+[gd_scene format=3 uid="uid://b43jpbmthx7ru"]
+
+[ext_resource type="Script" uid="uid://bac7clssc61ub" path="res://spik_2.gd" id="1_xc2jk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8pfon"]
+size = Vector2(21.75, 127)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xc2jk"]
+size = Vector2(23.5, 132)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_3qd5s"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qccw1"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_awny1"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_220gp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uq2t4"]
+size = Vector2(46, 142)
+
+[node name="Node2D" type="Node2D" unique_id=2143504759]
+scale = Vector2(2, 2)
+script = ExtResource("1_xc2jk")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=206374805]
+position = Vector2(221, 226)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=335185563]
+position = Vector2(-7.125, -56.5)
+shape = SubResource("RectangleShape2D_8pfon")
+debug_color = Color(1, 0, 0, 0.41960785)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D" unique_id=719584749]
+position = Vector2(51.25, -54)
+shape = SubResource("RectangleShape2D_xc2jk")
+debug_color = Color(1, 0, 0, 0.41960785)
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Area2D" unique_id=234908905]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(23.672508, -48.73835)
+rotation = 3.1415927
+scale = Vector2(46.190876, 86.507576)
+mesh = SubResource("CapsuleMesh_3qd5s")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Area2D/MeshInstance2D2" unique_id=686824667]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-0.007089913, 0.22265851)
+scale = Vector2(1.017517, 1.5605569)
+mesh = SubResource("BoxMesh_qccw1")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Area2D" unique_id=535289656]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(49, -114)
+rotation = -1.9894023
+scale = Vector2(19.616884, 14.70545)
+skew = -0.52419114
+mesh = SubResource("PrismMesh_awny1")
+
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="Area2D/MeshInstance2D3" unique_id=1843828132]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-3.4791827, -3.2693586)
+rotation = -1.5307859
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="Area2D/MeshInstance2D3" unique_id=1854889737]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-1.3015643, -1.3170013)
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="Area2D/MeshInstance2D3" unique_id=658965596]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.76565766, -0.35942364)
+rotation = 1.2970926
+scale = Vector2(1.1256325, 1.2726626)
+skew = -0.7981178
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="Area2D/MeshInstance2D3" unique_id=1954424039]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-2.2317088, -1.5967493)
+rotation = 1.2970926
+scale = Vector2(1.1256325, 1.2726626)
+skew = -0.7981178
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="Area2D/MeshInstance2D3" unique_id=1316006919]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.9686656, -0.8940134)
+rotation = -1.4132208
+scale = Vector2(1.4801607, 1.192679)
+skew = -0.9685954
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="Area2D/MeshInstance2D3" unique_id=748672619]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-2.7858205, -2.4121823)
+rotation = 1.4022385
+scale = Vector2(1.4801607, 1.192679)
+skew = -0.9685954
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="Area2D/MeshInstance2D3" unique_id=1527229065]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-3.965395, -3.775539)
+rotation = -1.4132208
+scale = Vector2(1.4801607, 1.192679)
+skew = -0.9685954
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="Area2D/MeshInstance2D3" unique_id=1849128728]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-2.9172046, -2.9754643)
+rotation = -1.4132208
+scale = Vector2(1.4801607, 1.192679)
+skew = -0.9685954
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="Area2D/MeshInstance2D3" unique_id=1023717634]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-2.4347165, -2.1313405)
+rotation = -1.4132208
+scale = Vector2(1.4801607, 1.192679)
+skew = -0.9685954
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="Area2D" unique_id=1125455881]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-1.9999995, 1.5854836e-05)
+rotation = -5.088456
+scale = Vector2(19.616884, 14.70545)
+skew = -0.52419114
+mesh = SubResource("PrismMesh_awny1")
+
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="Area2D/MeshInstance2D4" unique_id=775766520]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-3.492199, -2.9844768)
+rotation = -1.0190965
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="Area2D/MeshInstance2D4" unique_id=1895649285]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-1.4445088, -1.1017008)
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="Area2D/MeshInstance2D4" unique_id=1338303316]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.76565766, -0.35942364)
+rotation = 1.2970926
+scale = Vector2(1.1256325, 1.2726626)
+skew = -0.7981178
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="Area2D/MeshInstance2D4" unique_id=730555760]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-2.1954117, -1.7308961)
+rotation = 1.2970926
+scale = Vector2(1.1256325, 1.2726626)
+skew = -0.7981178
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="Area2D/MeshInstance2D4" unique_id=1609209592]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.9686656, -0.8940134)
+rotation = -1.4132208
+scale = Vector2(1.4801607, 1.192679)
+skew = -0.9685954
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="Area2D/MeshInstance2D4" unique_id=1045211099]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-2.9582086, -2.2672586)
+rotation = -1.4132208
+scale = Vector2(1.4801607, 1.192679)
+skew = -0.9685954
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="Area2D/MeshInstance2D4" unique_id=546845092]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-3.9205542, -3.34755)
+rotation = -1.4132208
+scale = Vector2(1.4801607, 1.192679)
+skew = -0.9685954
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="Area2D/MeshInstance2D4" unique_id=707121862]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-3.2219167, -2.6263885)
+rotation = -1.4132208
+scale = Vector2(1.4801607, 1.192679)
+skew = -0.9685954
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="Area2D/MeshInstance2D4" unique_id=824893800]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-2.4347165, -2.1313405)
+rotation = -1.4132208
+scale = Vector2(1.4801607, 1.192679)
+skew = -0.9685954
+mesh = SubResource("PrismMesh_220gp")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=610342061]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1101561549]
+position = Vector2(245, 162)
+shape = SubResource("RectangleShape2D_uq2t4")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

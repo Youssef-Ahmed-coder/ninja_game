@@ -1,0 +1,1025 @@
+[gd_scene format=3 uid="uid://d0b17p3qdou47"]
+
+[ext_resource type="Script" uid="uid://c7hegefvckckw" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="FontFile" uid="uid://bdlkd8dp48aoc" path="res://JOKERMAN.TTF" id="2_onrkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
+size = Vector2(69, 148)
+
+[sub_resource type="Animation" id="Animation_onrkg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("body/body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -3)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("body/hand:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 3)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("body/head:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.00066875515),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("body/head/MeshInstance2D7:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.00066875515),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-7.999997, -57)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("body/head/MeshInstance2D8:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(10, -57)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("body/hand/MeshInstance2D3:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(33, 17)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("body/lege/MeshInstance2D5:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-21.000002, 62)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("body/lege/MeshInstance2D6:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(19.999996, 62)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("body/hand/MeshInstance2D5:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-33, 17)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("body/body/MeshInstance2D2:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-0.875, 16.499992)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("sowrd:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("sowrd:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(102.000015, 24.99999)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("sowrd:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0074943006]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CPUParticles2D:emitting")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CPUParticles2D:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(96, 92)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CPUParticles2D:gravity")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(980, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_b26j0"]
+resource_name = "dash"
+length = 0.23333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CPUParticles2D:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("body/head/MeshInstance2D7:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-11.999997, -57)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("body/head/MeshInstance2D8:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(3.999998, -57)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CPUParticles2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(96, 92)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CPUParticles2D:gravity")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(980, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_n7ghd"]
+resource_name = "dash 2"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CPUParticles2D:gravity")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-980, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CPUParticles2D:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("body/head/MeshInstance2D8:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(12, -57)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("body/head/MeshInstance2D7:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2.999999, -57)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CPUParticles2D:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-51, 70)]
+}
+
+[sub_resource type="Animation" id="Animation_2hs0m"]
+resource_name = "fall"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("body/hand/MeshInstance2D5:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-33, 17), Vector2(-33, -35.999996)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("body/hand/MeshInstance2D3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(33, 17), Vector2(33, -33.999996)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("body/head/MeshInstance2D8:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(10, -57), Vector2(9.999998, -43)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("body/head/MeshInstance2D7:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-7.999997, -57), Vector2(-7.999997, -43)]
+}
+
+[sub_resource type="Animation" id="Animation_dw050"]
+resource_name = "hit left"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sowrd:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.93333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sowrd:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-57, 52), Vector2(-93, 28.999996)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sowrd:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0074943006]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("body/hand/MeshInstance2D5:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-33, 17), Vector2(-68, -5)]
+}
+
+[sub_resource type="Animation" id="Animation_1jxqw"]
+resource_name = "hit right"
+length = 0.8333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sowrd:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.06666666, 0.76666665),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("body/hand/MeshInstance2D3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.03333333, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(33, 17), Vector2(55, 3)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("sowrd:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.03333333, 0.33333337),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(80.00003, 40.999992), Vector2(102.000015, 24.99999)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("sowrd:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.2904178]
+}
+
+[sub_resource type="Animation" id="Animation_4flbx"]
+resource_name = "idel"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("body/body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -4), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("body/hand:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1.1333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 3), Vector2(0, 7)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("body/head:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.5, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 3)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("body/lege/MeshInstance2D6:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(19.999996, 62)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("body/lege/MeshInstance2D5:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-21.000002, 62)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("body/hand/MeshInstance2D3:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(33, 17)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("body/hand/MeshInstance2D5:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-33, 17)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("body/body/MeshInstance2D2:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-0.875, 16.499992)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("body/head/MeshInstance2D8:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(8.999998, -57)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("body/head/MeshInstance2D7:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-8, -57)]
+}
+
+[sub_resource type="Animation" id="Animation_sweqy"]
+resource_name = "jump"
+length = 1.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("body/head/MeshInstance2D7:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-7.999997, -45)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("body/hand/MeshInstance2D3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("body/lege/MeshInstance2D5:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.06666666, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-21.000002, 62), Vector2(-21.000002, 78)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("body/lege/MeshInstance2D6:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(19.999996, 62), Vector2(19.999996, 78)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("body/head/MeshInstance2D8:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(10, -45)]
+}
+
+[sub_resource type="Animation" id="Animation_i3pqv"]
+resource_name = "move"
+length = 2.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("body/head/MeshInstance2D7:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.5),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2.000002, -57)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("body/head/MeshInstance2D8:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.5),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(14, -57)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("body/hand/MeshInstance2D3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.5),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(47, 4.666664)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("body/lege/MeshInstance2D5:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.5, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-21.000002, 62), Vector2(19, 62)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("body/lege/MeshInstance2D6:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.5, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(19.999996, 62), Vector2(-20.000002, 62)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("body/hand/MeshInstance2D5:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1.4943422),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-33, 17)]
+}
+
+[sub_resource type="Animation" id="Animation_hqtel"]
+resource_name = "move left"
+length = 2.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("body/head/MeshInstance2D7:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-12, -57)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("body/head/MeshInstance2D8:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.999998, -57)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("body/hand/MeshInstance2D3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.5376564),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(34, 14.666664)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("body/hand/MeshInstance2D5:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.5376564),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-33, -12)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("body/lege/MeshInstance2D6:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.43333334, 1.4333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(19.999996, 62), Vector2(-20.000002, 62)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("body/lege/MeshInstance2D5:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.46666667, 1.4666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-21.000002, 62), Vector2(19, 62)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_onrkg"]
+_data = {
+&"RESET": SubResource("Animation_onrkg"),
+&"dash": SubResource("Animation_b26j0"),
+&"dash 2": SubResource("Animation_n7ghd"),
+&"fall": SubResource("Animation_2hs0m"),
+&"hit left": SubResource("Animation_dw050"),
+&"hit right": SubResource("Animation_1jxqw"),
+&"idel": SubResource("Animation_4flbx"),
+&"jump": SubResource("Animation_sweqy"),
+&"move": SubResource("Animation_i3pqv"),
+&"move left": SubResource("Animation_hqtel")
+}
+
+[sub_resource type="SphereMesh" id="SphereMesh_4flbx"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_i3pqv"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_onrkg"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_r76a6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_dwvek"]
+
+[node name="ninja" type="CharacterBody2D" unique_id=624796535 groups=["player"]]
+texture_filter = 1
+script = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1658920080]
+position = Vector2(21.5, 74)
+shape = SubResource("RectangleShape2D_sh265")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=872562627]
+position = Vector2(22, 74)
+zoom = Vector2(0.75, 0.75)
+position_smoothing_enabled = true
+position_smoothing_speed = 2.0
+rotation_smoothing_enabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=276647375]
+libraries/ = SubResource("AnimationLibrary_onrkg")
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="." unique_id=441713880]
+libraries/ = SubResource("AnimationLibrary_onrkg")
+
+[node name="AnimationPlayer3" type="AnimationPlayer" parent="." unique_id=640385984]
+libraries/ = SubResource("AnimationLibrary_onrkg")
+
+[node name="AnimationPlayer4" type="AnimationPlayer" parent="." unique_id=835939968]
+libraries/ = SubResource("AnimationLibrary_onrkg")
+
+[node name="AnimationPlayer5" type="AnimationPlayer" parent="." unique_id=1872417880]
+libraries/ = SubResource("AnimationLibrary_onrkg")
+
+[node name="body" type="Node2D" parent="." unique_id=10219286]
+position = Vector2(22, 74)
+
+[node name="head" type="Node2D" parent="body" unique_id=1728382294]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="body/head" unique_id=507455535]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(0.71024704, -51.27845)
+rotation = -0.003351022
+scale = Vector2(45.5, 44.5)
+mesh = SubResource("SphereMesh_4flbx")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="body/head" unique_id=1574976990]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-7.999997, -57)
+scale = Vector2(11.5, 10)
+mesh = SubResource("PrismMesh_i3pqv")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="body/head" unique_id=1589781673]
+modulate = Color(0.93333334, 0, 0, 1)
+position = Vector2(10, -57)
+scale = Vector2(11.5, 10)
+mesh = SubResource("PrismMesh_i3pqv")
+
+[node name="lege" type="Node2D" parent="body" unique_id=1307647551]
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="body/lege" unique_id=119909665]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-21.000002, 62)
+scale = Vector2(24.752268, 24.249994)
+mesh = SubResource("SphereMesh_4flbx")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="body/lege" unique_id=266546884]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(19.999996, 62)
+scale = Vector2(24.752268, 24.249994)
+mesh = SubResource("SphereMesh_4flbx")
+
+[node name="hand" type="Node2D" parent="body" unique_id=908012737]
+position = Vector2(0, 3)
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="body/hand" unique_id=1349504803]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(33, 17)
+scale = Vector2(24.752268, 24.249994)
+mesh = SubResource("SphereMesh_4flbx")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="body/hand" unique_id=484974673]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-33, 17)
+scale = Vector2(24.752268, 24.249994)
+mesh = SubResource("SphereMesh_4flbx")
+
+[node name="body" type="Node2D" parent="body" unique_id=606503479]
+position = Vector2(0, -3)
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="body/body" unique_id=1766859934]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-0.875, 16.499992)
+scale = Vector2(33.75, 38.375004)
+mesh = SubResource("CapsuleMesh_onrkg")
+
+[node name="sowrd" type="Node2D" parent="." unique_id=1455131725]
+visible = false
+position = Vector2(102.000015, 24.99999)
+rotation = 0.0074943006
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="sowrd" unique_id=966699296]
+position = Vector2(22.043243, 0.37264037)
+rotation = 1.0354158
+scale = Vector2(55.190952, 7.5)
+mesh = SubResource("BoxMesh_r76a6")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="sowrd" unique_id=285625911]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(35.31674, 24.54967)
+rotation = 1.0354158
+scale = Vector2(7.5235925, 23.462133)
+mesh = SubResource("BoxMesh_dwvek")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="sowrd" unique_id=556184247]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(40.143772, 32.60101)
+rotation = 1.0354158
+scale = Vector2(15.074618, 6.610549)
+mesh = SubResource("BoxMesh_dwvek")
+
+[node name="Timer" type="Timer" parent="." unique_id=730005775]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=232983777]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1585799452]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_left = 0.79700005
+anchor_top = 0.027
+anchor_right = 1.001
+anchor_bottom = 0.186
+offset_left = -0.14404297
+offset_top = 4.5039997
+offset_right = 0.8479004
+offset_bottom = 4.472
+grow_horizontal = 0
+rotation = -0.019926988
+theme_override_fonts/font = ExtResource("2_onrkg")
+theme_override_font_sizes/font_size = 35
+text = "wait ..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer" unique_id=1016148724]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = -1
+anchor_left = 0.795
+anchor_top = -0.010000001
+anchor_right = 0.99000007
+anchor_bottom = 0.12100001
+offset_left = -1.4940796
+offset_top = 3.835433
+offset_right = 9.865845
+offset_bottom = 4.5885468
+grow_horizontal = 0
+rotation = -0.019926988
+theme_override_fonts/font = ExtResource("2_onrkg")
+theme_override_font_sizes/font_size = 33
+text = "wait ..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer2" type="Timer" parent="." unique_id=1671137981]
+wait_time = 6.1000000000000005
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=1625021318]
+position = Vector2(96, 92)
+emitting = false
+amount = 99
+emission_shape = 1
+emission_sphere_radius = 128.0
+gravity = Vector2(980, 0)
+scale_amount_min = 0.0
+scale_amount_max = 25.0
+color = Color(0, 0, 0, 1)

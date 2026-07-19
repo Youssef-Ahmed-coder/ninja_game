@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://cokofnvji8npu"]
+
+[ext_resource type="PackedScene" uid="uid://d0b17p3qdou47" path="res://player.tscn" id="1_3hsld"]
+[ext_resource type="PackedScene" uid="uid://cy8uysivig74e" path="res://sword.tscn" id="2_bk8lu"]
+[ext_resource type="Script" uid="uid://vbbw86g2sprd" path="res://area_2d.gd" id="3_l1x0b"]
+[ext_resource type="Texture2D" uid="uid://bs7l0n7sqtibo" path="res://Skeleton.png" id="4_vg2xd"]
+[ext_resource type="Texture2D" uid="uid://din5qxl2hv33q" path="res://Bush (1).png" id="5_v2l4j"]
+[ext_resource type="Texture2D" uid="uid://jst753mrfhgi" path="res://Bush (2).png" id="6_5ervi"]
+[ext_resource type="Texture2D" uid="uid://cwx361txpe7q3" path="res://Stone.png" id="6_v2l4j"]
+[ext_resource type="PackedScene" uid="uid://b43jpbmthx7ru" path="res://spik2.tscn" id="8_5ervi"]
+[ext_resource type="PackedScene" uid="uid://5lru7ocgj5aq" path="res://tp.tscn" id="9_13yt0"]
+[ext_resource type="PackedScene" uid="uid://qi2v1cnwx8rf" path="res://man.tscn" id="10_ki2bf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_q2ljd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3hsld"]
+size = Vector2(3193, 349)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i8r0w"]
+size = Vector2(14588, 480)
+
+[node name="Node2D" type="Node2D" unique_id=1664179049]
+position = Vector2(-12, 50)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=739578945]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D" unique_id=32763029]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(81.00006, 439.875)
+scale = Vector2(3196, 342.24997)
+mesh = SubResource("BoxMesh_q2ljd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=465051859]
+position = Vector2(84.5, 444.5)
+shape = SubResource("RectangleShape2D_3hsld")
+
+[node name="sword" parent="." unique_id=450239838 instance=ExtResource("2_bk8lu")]
+position = Vector2(-1117, 88)
+
+[node name="CharacterBody2D" parent="." unique_id=624796535 instance=ExtResource("1_3hsld")]
+position = Vector2(-567, 2)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1385642749]
+script = ExtResource("3_l1x0b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1186645670]
+position = Vector2(-205, 1826)
+shape = SubResource("RectangleShape2D_i8r0w")
+
+[node name="Node2D" parent="." unique_id=2143504759 instance=ExtResource("8_5ervi")]
+position = Vector2(-693, -202)
+
+[node name="Skeleton" type="Sprite2D" parent="." unique_id=1763970556]
+modulate = Color(0.0142752165, 0.014275219, 0.014275211, 1)
+position = Vector2(-897, 251)
+texture = ExtResource("4_vg2xd")
+
+[node name="Stone" type="Sprite2D" parent="." unique_id=1646266857]
+modulate = Color(0.0018410678, 0.0018410682, 0.0018410678, 1)
+position = Vector2(-1249, 234)
+texture = ExtResource("6_v2l4j")
+
+[node name="Bush(2)" type="Sprite2D" parent="." unique_id=1187839153]
+modulate = Color(0.0142752165, 0.014275218, 0.014275218, 1)
+position = Vector2(-597, 249)
+texture = ExtResource("6_5ervi")
+
+[node name="Bush(1)" type="Sprite2D" parent="Bush(2)" unique_id=692185494]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(-31.999939, -34)
+rotation = -0.39418957
+scale = Vector2(1, 1.1273848)
+texture = ExtResource("5_v2l4j")
+
+[node name="Bush(1)2" type="Sprite2D" parent="Bush(2)" unique_id=817465732]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(37, -42)
+rotation = 0.48866063
+scale = Vector2(1, 1.1273847)
+texture = ExtResource("5_v2l4j")
+
+[node name="Bush(1)3" type="Sprite2D" parent="Bush(2)" unique_id=2131788324]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(-48.99994, -74.000015)
+rotation = -0.28146547
+scale = Vector2(1, 1.1273847)
+texture = ExtResource("5_v2l4j")
+
+[node name="Bush(1)4" type="Sprite2D" parent="Bush(2)" unique_id=2052468082]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(24, -79.999985)
+rotation = 0.20836633
+scale = Vector2(1, 1.1273848)
+texture = ExtResource("5_v2l4j")
+
+[node name="Area2D2" parent="." unique_id=1052820455 instance=ExtResource("9_13yt0")]
+position = Vector2(651, -31)
+
+[node name="CharacterBody2D2" parent="." unique_id=1690872972 instance=ExtResource("10_ki2bf")]
+position = Vector2(-1031, 137)
+
+[connection signal="area_shape_entered" from="Area2D" to="Area2D" method="_on_area_shape_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

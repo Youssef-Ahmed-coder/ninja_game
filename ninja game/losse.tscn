@@ -1,0 +1,226 @@
+[gd_scene format=3 uid="uid://caynwoawhcqot"]
+
+[ext_resource type="Script" uid="uid://00byls8328t6" path="res://losse.gd" id="1_ifbhn"]
+[ext_resource type="FontFile" uid="uid://bdlkd8dp48aoc" path="res://JOKERMAN.TTF" id="2_iygac"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_t2550"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_igvus"]
+
+[sub_resource type="Animation" id="Animation_ifbhn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D2:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [6.021386]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/head:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/head:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_iygac"]
+resource_name = "label move"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D2:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.13333333, 2.0666666),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [6.021386, 6.544985]
+}
+
+[sub_resource type="Animation" id="Animation_t2550"]
+resource_name = "new_animation"
+length = 3.5333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/head:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.0503587),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/head:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.0503587, 3.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_igvus"]
+resource_name = "open close"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/head:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.6666666, 2.1, 3.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.09019608)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cgkdr"]
+_data = {
+&"RESET": SubResource("Animation_ifbhn"),
+&"label move": SubResource("Animation_iygac"),
+&"new_animation": SubResource("Animation_t2550"),
+&"open close": SubResource("Animation_igvus")
+}
+
+[node name="Control" type="Control" unique_id=847192970]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ifbhn")
+
+[node name="bye" type="Button" parent="." unique_id=294996292]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.049000002
+anchor_top = 0.81500006
+anchor_right = 0.14600001
+anchor_bottom = 0.95100003
+offset_left = -12.551998
+offset_top = -22.120056
+offset_right = 3.8079834
+offset_bottom = 11.751953
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.9490196, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_iygac")
+theme_override_font_sizes/font_size = 75
+text = "Exit"
+
+[node name="bye2" type="Button" parent="." unique_id=1170263748]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.924
+anchor_top = 0.77800006
+anchor_right = 1.139
+anchor_bottom = 0.96300006
+offset_left = -16.447998
+offset_top = -16.144043
+offset_right = -0.12805176
+offset_bottom = -0.024047852
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("2_iygac")
+theme_override_font_sizes/font_size = 75
+text = "back"
+
+[node name="Node2D" type="Node2D" parent="." unique_id=191138037]
+position = Vector2(464.06934, 132.99551)
+
+[node name="head" type="Node2D" parent="Node2D" unique_id=1861330013]
+visible = false
+modulate = Color(1, 1, 1, 0)
+position = Vector2(143.93066, 883.0045)
+scale = Vector2(13, 13)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Node2D/head" unique_id=1143638210]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(0.71024704, -51.27845)
+rotation = -0.003351022
+scale = Vector2(45.5, 44.5)
+mesh = SubResource("SphereMesh_t2550")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="Node2D/head" unique_id=964505227]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-7.999997, -57)
+scale = Vector2(11.5, 10)
+mesh = SubResource("PrismMesh_igvus")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="Node2D/head" unique_id=1709141400]
+modulate = Color(0.93333334, 0, 0, 1)
+position = Vector2(10, -57)
+scale = Vector2(11.5, 10)
+mesh = SubResource("PrismMesh_igvus")
+
+[node name="Camera2D" type="Camera2D" parent="Node2D" unique_id=1238443395]
+position = Vector2(171.93066, 91.004486)
+zoom = Vector2(0.75, 0.75)
+
+[node name="Node2D2" type="Node2D" parent="." unique_id=1429306427]
+position = Vector2(704, 0)
+rotation = 6.021386
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Label" type="Label" parent="Node2D2" unique_id=28000703]
+anchors_preset = -1
+anchor_left = -0.021701388
+anchor_top = 0.118827164
+anchor_right = -0.021701388
+anchor_bottom = 0.118827164
+offset_left = -284.40417
+offset_top = -174.01817
+offset_right = 275.59583
+offset_bottom = -22.018173
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_iygac")
+theme_override_font_sizes/font_size = 100
+text = "You losse"
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1262535836]
+libraries/ = SubResource("AnimationLibrary_cgkdr")
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="." unique_id=356760192]
+libraries/ = SubResource("AnimationLibrary_cgkdr")
+
+[connection signal="pressed" from="bye" to="." method="_on_bye_pressed"]
+[connection signal="pressed" from="bye2" to="." method="_on_bye_2_pressed"]

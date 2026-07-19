@@ -1,0 +1,186 @@
+[gd_scene format=3 uid="uid://ba4rfobrp0fcm"]
+
+[ext_resource type="Script" uid="uid://bwp4eu10fe8lx" path="res://levels.gd" id="1_48rmr"]
+[ext_resource type="FontFile" uid="uid://bdlkd8dp48aoc" path="res://JOKERMAN.TTF" id="2_5k54k"]
+[ext_resource type="Texture2D" uid="uid://dd4ohe8fe5atx" path="res://BackGround.png" id="2_hbfth"]
+
+[sub_resource type="Animation" id="Animation_qksdj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.2617994]
+}
+
+[sub_resource type="Animation" id="Animation_48rmr"]
+resource_name = "label move"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.5333333, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.2617994, 0.2617994]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5k54k"]
+_data = {
+&"RESET": SubResource("Animation_qksdj"),
+&"label move": SubResource("Animation_48rmr")
+}
+
+[node name="Node2D" type="Node2D" unique_id=1863752546]
+script = ExtResource("1_48rmr")
+
+[node name="BackGround" type="Sprite2D" parent="." unique_id=1647896155]
+position = Vector2(32, -168)
+scale = Vector2(1, 1.1503906)
+texture = ExtResource("2_hbfth")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1273638253]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1180067356]
+libraries/ = SubResource("AnimationLibrary_5k54k")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1147383378]
+position = Vector2(0, -198)
+rotation = -0.2617994
+
+[node name="Label" type="Label" parent="Node2D" unique_id=1545839092]
+offset_left = -203.73346
+offset_top = -116.56055
+offset_right = 275.26654
+offset_bottom = 111.43945
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5k54k")
+theme_override_font_sizes/font_size = 150
+text = "Levels"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="bata" type="Button" parent="." unique_id=2036694065]
+offset_left = -465.2895
+offset_top = 127.71057
+offset_right = -355.32706
+offset_bottom = 238.26202
+rotation = -0.7853982
+
+[node name="level 1" type="Button" parent="." unique_id=1820597780]
+offset_left = -274.2895
+offset_top = -1.2894363
+offset_right = -164.32706
+offset_bottom = 109.262024
+rotation = -0.7853982
+
+[node name="level 2" type="Button" parent="." unique_id=881095994]
+offset_left = -78.2895
+offset_top = 126.71056
+offset_right = 31.672935
+offset_bottom = 237.26202
+rotation = -0.7853982
+
+[node name="level 3" type="Button" parent="." unique_id=835797221]
+offset_left = 115.710495
+offset_top = -0.28944397
+offset_right = 225.67294
+offset_bottom = 110.262024
+rotation = -0.7853982
+
+[node name="level 4" type="Button" parent="." unique_id=680746734]
+offset_left = 307.71048
+offset_top = 124.71058
+offset_right = 417.6729
+offset_bottom = 235.26202
+rotation = -0.7853982
+
+[node name="Label" type="Label" parent="." unique_id=1518943855]
+offset_left = -452.0
+offset_top = 94.0
+offset_right = -323.0
+offset_bottom = 163.0
+theme_override_fonts/font = ExtResource("2_5k54k")
+theme_override_font_sizes/font_size = 25
+text = "bata world"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1762218855]
+offset_left = -254.0
+offset_top = -41.0
+offset_right = -137.0
+offset_bottom = 28.0
+theme_override_fonts/font = ExtResource("2_5k54k")
+theme_override_font_sizes/font_size = 50
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=637253520]
+offset_left = -56.0
+offset_top = 88.0
+offset_right = 61.0
+offset_bottom = 157.0
+theme_override_fonts/font = ExtResource("2_5k54k")
+theme_override_font_sizes/font_size = 50
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=1455889949]
+offset_left = 136.0
+offset_top = -39.0
+offset_right = 253.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("2_5k54k")
+theme_override_font_sizes/font_size = 50
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="." unique_id=1714075747]
+offset_left = 328.0
+offset_top = 80.0
+offset_right = 445.0
+offset_bottom = 156.0
+theme_override_fonts/font = ExtResource("2_5k54k")
+theme_override_font_sizes/font_size = 50
+text = "soon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="bye" type="Button" parent="." unique_id=834453705]
+anchors_preset = -1
+anchor_left = -0.11100001
+anchor_top = 0.81500006
+anchor_right = 0.215
+anchor_bottom = 1.062
+offset_left = -577.0
+offset_top = -328.0
+offset_right = -344.0
+offset_bottom = -192.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.9490196, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5k54k")
+theme_override_font_sizes/font_size = 75
+text = "Exit"
+
+[connection signal="pressed" from="bata" to="." method="_on_bata_pressed"]
+[connection signal="pressed" from="level 1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="level 2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="level 3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="bye" to="." method="_on_bye_pressed"]

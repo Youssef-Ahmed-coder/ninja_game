@@ -1,0 +1,876 @@
+[gd_scene format=3 uid="uid://qi2v1cnwx8rf"]
+
+[ext_resource type="Script" uid="uid://cw7iqr0su5g23" path="res://man.gd" id="1_pfr4v"]
+[ext_resource type="Texture2D" uid="uid://cwx361txpe7q3" path="res://Stone.png" id="2_rb5kw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pfr4v"]
+radius = 174.28712
+
+[sub_resource type="BoxMesh" id="BoxMesh_rcwax"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_22thb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gca12"]
+size = Vector2(96, 192)
+
+[sub_resource type="Animation" id="Animation_rb5kw"]
+resource_name = "HIDE"
+length = 0.43333334
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../turn right:enabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../turn left:enabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../target:enabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../target2:enabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../target3:enabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../CollisionShape2D:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CollisionShape2D:disabled")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath(".:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../CPUParticles2D:emitting")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_lhcdr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/MeshInstance2D6:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(34.999996, 27.25)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/MeshInstance2D6:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/MeshInstance2D5:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(36, 95.25)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/MeshInstance2D5:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.0471976]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D/MeshInstance2D7:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(36, 91.25)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D/MeshInstance2D7:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node2D/MeshInstance2D6/main ston:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.54166675, 0.36725664)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone2:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(78.37512, -1.2244017)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone3:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(156.75026, -2.4487834)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone4:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(235.12537, -3.6731863)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone5:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(274.31293, -4.2853756)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone5:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.1415925]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone4:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.1415925]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone3:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.1415925]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone2:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.1415925]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Node2D/MeshInstance2D6/main ston:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0074249976]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("..:visible")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("../turn right:enabled")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("../turn left:enabled")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("../target:enabled")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("../target2:enabled")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("../target3:enabled")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("../CollisionShape2D:disabled")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("CollisionShape2D:disabled")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("../CPUParticles2D:emitting")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath(".:visible")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_pfr4v"]
+resource_name = "move left"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/MeshInstance2D6:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.51),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(34.999996, 27.25), Vector2(24, 24)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/MeshInstance2D6:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.51),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.7853982]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/MeshInstance2D6/main ston:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2.791666, 0.36725664)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/MeshInstance2D7:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(16.000002, 87.99999), Vector2(36, 91.25)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D/MeshInstance2D5:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.033333335, 0.5433333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(56, 87.999985), Vector2(37, 90.999985)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D/MeshInstance2D7:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.033333335, 0.53333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0471976, 0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node2D/MeshInstance2D5:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.0471976, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_oqyax"]
+resource_name = "move right"
+length = 0.96666664
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/MeshInstance2D6:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.43333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(34.999996, 27.25), Vector2(48, 24.000002)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/MeshInstance2D6:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -1.0471976]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/MeshInstance2D5:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.51),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(56, 87.999985), Vector2(37, 90.999985)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/MeshInstance2D5:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.01, 0.51),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.0471976, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D/MeshInstance2D7:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(16.000002, 87.99999), Vector2(36, 91.25)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D/MeshInstance2D7:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.53333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0471976, 0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node2D/MeshInstance2D6/main ston:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.54166675, 0.36725664)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone2:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(78.37512, -1.2244017)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone3:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(156.75026, -2.4487834)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone4:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(195.9378, -3.0609894)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone5:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(274.31293, -4.2853756)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone5:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.1415925]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone4:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.1415925]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone3:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.1415925]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Node2D/MeshInstance2D6/main ston/Stone2:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.1415925]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Node2D/MeshInstance2D6/main ston:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0074249976]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1j1fo"]
+_data = {
+&"HIDE": SubResource("Animation_rb5kw"),
+&"RESET": SubResource("Animation_lhcdr"),
+&"move left": SubResource("Animation_pfr4v"),
+&"move right": SubResource("Animation_oqyax")
+}
+
+[node name="man" type="CharacterBody2D" unique_id=1690872972 groups=["enemy"]]
+script = ExtResource("1_pfr4v")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=554396996]
+position = Vector2(-64, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=652867851]
+position = Vector2(42, 22)
+shape = SubResource("CircleShape2D_pfr4v")
+
+[node name="Node2D" type="Node2D" parent="Area2D" unique_id=851103753]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Area2D/Node2D" unique_id=870248025]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(37, -27.749998)
+scale = Vector2(64, 56.5)
+mesh = SubResource("BoxMesh_rcwax")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Area2D/Node2D" unique_id=1128683289]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(36, 28.250004)
+scale = Vector2(24, 56.5)
+mesh = SubResource("BoxMesh_rcwax")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="Area2D/Node2D" unique_id=1486311662]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(36, 59.25)
+scale = Vector2(24, 56.5)
+mesh = SubResource("BoxMesh_rcwax")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="Area2D/Node2D" unique_id=1787205138]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(36, 91.25)
+scale = Vector2(24, 56.5)
+mesh = SubResource("BoxMesh_rcwax")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="Area2D/Node2D" unique_id=825388967]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(36, 95.25)
+rotation = -1.0471976
+scale = Vector2(24, 56.5)
+mesh = SubResource("BoxMesh_rcwax")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="Area2D/Node2D" unique_id=1021786772]
+modulate = Color(0.057315998, 0.057316005, 0.057315998, 1)
+position = Vector2(34.999996, 27.25)
+scale = Vector2(24.000002, 56.5)
+mesh = SubResource("BoxMesh_22thb")
+
+[node name="main ston" type="Sprite2D" parent="Area2D/Node2D/MeshInstance2D6" unique_id=832393479]
+position = Vector2(0.54166675, 0.36725664)
+rotation = 0.0074249976
+scale = Vector2(0.008503735, 0.004045075)
+skew = 0.033702612
+texture = ExtResource("2_rb5kw")
+
+[node name="Stone2" type="Sprite2D" parent="Area2D/Node2D/MeshInstance2D6/main ston" unique_id=390464080]
+position = Vector2(78.37512, -1.2244017)
+rotation = 3.1415925
+scale = Vector2(0.90869474, 1.094669)
+skew = -0.0039350986
+texture = ExtResource("2_rb5kw")
+
+[node name="Stone3" type="Sprite2D" parent="Area2D/Node2D/MeshInstance2D6/main ston" unique_id=1712712780]
+position = Vector2(156.75026, -2.4487834)
+rotation = 3.1415925
+scale = Vector2(0.90869474, 1.094669)
+skew = -0.0039350986
+texture = ExtResource("2_rb5kw")
+
+[node name="Stone4" type="Sprite2D" parent="Area2D/Node2D/MeshInstance2D6/main ston" unique_id=190745754]
+position = Vector2(235.12537, -3.6731863)
+rotation = 3.1415925
+scale = Vector2(0.90869474, 1.094669)
+skew = -0.0039350986
+texture = ExtResource("2_rb5kw")
+
+[node name="Stone5" type="Sprite2D" parent="Area2D/Node2D/MeshInstance2D6/main ston" unique_id=1969032685]
+position = Vector2(274.31293, -4.2853756)
+rotation = 3.1415925
+scale = Vector2(0.90869474, 1.094669)
+skew = -0.0039350986
+texture = ExtResource("2_rb5kw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2087121749]
+position = Vector2(-24, 32)
+shape = SubResource("RectangleShape2D_gca12")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1328908605]
+root_node = NodePath("../Area2D")
+libraries/ = SubResource("AnimationLibrary_1j1fo")
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="." unique_id=1170660790]
+root_node = NodePath("../Area2D")
+libraries/ = SubResource("AnimationLibrary_1j1fo")
+
+[node name="turn right" type="RayCast2D" parent="." unique_id=602765881]
+position = Vector2(-73, 105)
+target_position = Vector2(-55, -1)
+
+[node name="turn left" type="RayCast2D" parent="." unique_id=1819783159]
+position = Vector2(24, 104)
+target_position = Vector2(56, 0)
+
+[node name="target" type="RayCast2D" parent="." unique_id=563659023]
+position = Vector2(-27, -59)
+target_position = Vector2(0, -45)
+
+[node name="target2" type="RayCast2D" parent="." unique_id=1626574999]
+position = Vector2(22, 48)
+target_position = Vector2(42, 0)
+
+[node name="target3" type="RayCast2D" parent="." unique_id=1750000006]
+position = Vector2(-75, 48)
+target_position = Vector2(-37, 0)
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=446926587]
+position = Vector2(-32, 71)
+emitting = false
+amount = 50
+lifetime = 0.5
+emission_shape = 1
+emission_sphere_radius = 98.34
+gravity = Vector2(0, -980)
+scale_amount_max = 15.08
+color = Color(1, 0, 0, 1)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

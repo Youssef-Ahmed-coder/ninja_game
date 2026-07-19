@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://cy8uysivig74e"]
+
+[ext_resource type="Script" uid="uid://chw4tn0ljkcd6" path="res://sword.gd" id="1_74bdg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e4ynd"]
+size = Vector2(23.277084, 73.46984)
+
+[sub_resource type="BoxMesh" id="BoxMesh_r76a6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_dwvek"]
+
+[sub_resource type="Animation" id="Animation_74bdg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_e4ynd"]
+resource_name = "hide"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_r76a6"]
+resource_name = "stand"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 23)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dwvek"]
+_data = {
+&"RESET": SubResource("Animation_74bdg"),
+&"hide": SubResource("Animation_e4ynd"),
+&"stand": SubResource("Animation_r76a6")
+}
+
+[node name="sword" type="Area2D" unique_id=450239838]
+script = ExtResource("1_74bdg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=648951934]
+position = Vector2(24.837143, 7.6916356)
+rotation = -0.55105
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_e4ynd")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=25745800]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Node2D" unique_id=55396775]
+position = Vector2(22.043243, 0.37264037)
+rotation = 1.0354158
+scale = Vector2(55.190952, 7.5)
+mesh = SubResource("BoxMesh_r76a6")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Node2D" unique_id=1374825259]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(35.31674, 24.54967)
+rotation = 1.0354158
+scale = Vector2(7.5235925, 23.462133)
+mesh = SubResource("BoxMesh_dwvek")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Node2D" unique_id=1687034774]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(40.143772, 32.60101)
+rotation = 1.0354158
+scale = Vector2(15.074618, 6.610549)
+mesh = SubResource("BoxMesh_dwvek")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=355646970]
+libraries/ = SubResource("AnimationLibrary_dwvek")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://bnvpb8fbpx2ue"]
+
+[ext_resource type="Script" uid="uid://vbbw86g2sprd" path="res://area_2d.gd" id="1_0t3ih"]
+[ext_resource type="PackedScene" uid="uid://d0b17p3qdou47" path="res://player.tscn" id="2_pe8na"]
+[ext_resource type="PackedScene" uid="uid://b43jpbmthx7ru" path="res://spik2.tscn" id="3_2ow8g"]
+[ext_resource type="PackedScene" uid="uid://puj4psevluid" path="res://star.tscn" id="4_pe8na"]
+[ext_resource type="PackedScene" uid="uid://5lru7ocgj5aq" path="res://tp.tscn" id="5_2ow8g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tbpbd"]
+size = Vector2(47840, 1136.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_d05ww"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u82o0"]
+size = Vector2(3255, 510)
+
+[node name="Node2D" type="Node2D" unique_id=243986647]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=443110526]
+script = ExtResource("1_0t3ih")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1195669349]
+position = Vector2(5445, 5426)
+shape = SubResource("RectangleShape2D_tbpbd")
+
+[node name="CharacterBody2D" parent="." unique_id=624796535 instance=ExtResource("2_pe8na")]
+position = Vector2(239, 294)
+
+[node name="Node2D" parent="." unique_id=2143504759 instance=ExtResource("3_2ow8g")]
+position = Vector2(752, 54)
+
+[node name="Node2D2" parent="." unique_id=153937771 instance=ExtResource("3_2ow8g")]
+position = Vector2(1263, 51)
+
+[node name="Node2D3" parent="." unique_id=1585386848 instance=ExtResource("3_2ow8g")]
+position = Vector2(1263, -194)
+
+[node name="Node2D4" parent="." unique_id=1487609338 instance=ExtResource("3_2ow8g")]
+position = Vector2(1708, 60)
+
+[node name="Node2D5" parent="." unique_id=87417335 instance=ExtResource("3_2ow8g")]
+position = Vector2(1708, -177)
+
+[node name="Node2D7" parent="." unique_id=1154862954 instance=ExtResource("3_2ow8g")]
+position = Vector2(2165, 76)
+
+[node name="Node2D8" parent="." unique_id=1823241299 instance=ExtResource("3_2ow8g")]
+position = Vector2(2383, 49)
+
+[node name="Node2D9" parent="." unique_id=1155269346 instance=ExtResource("3_2ow8g")]
+position = Vector2(3660, 1219)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1698938675]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D" unique_id=1797323093]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(1619.0001, 782)
+scale = Vector2(3212, 521.5)
+mesh = SubResource("BoxMesh_d05ww")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1865522390]
+position = Vector2(1617.5, 781)
+shape = SubResource("RectangleShape2D_u82o0")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=2143676510]
+position = Vector2(3161, 1182)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D2" unique_id=292107597]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(1619.0001, 782)
+scale = Vector2(3212, 521.5)
+mesh = SubResource("BoxMesh_d05ww")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1906779464]
+position = Vector2(1617.5, 781)
+shape = SubResource("RectangleShape2D_u82o0")
+
+[node name="Node2D10" parent="." unique_id=2088686204 instance=ExtResource("3_2ow8g")]
+position = Vector2(3049, 1233)
+
+[node name="Node2D11" parent="." unique_id=1199181826 instance=ExtResource("3_2ow8g")]
+position = Vector2(3362, 1254)
+
+[node name="Node2D12" parent="." unique_id=942382065 instance=ExtResource("3_2ow8g")]
+position = Vector2(4052, 1242)
+
+[node name="Area2D2" parent="." unique_id=969222244 instance=ExtResource("4_pe8na")]
+position = Vector2(1207, 38)
+
+[node name="Area2D3" parent="." unique_id=14669118 instance=ExtResource("4_pe8na")]
+position = Vector2(1730, -129)
+
+[node name="Area2D4" parent="." unique_id=1965595951 instance=ExtResource("4_pe8na")]
+position = Vector2(3491, 1144)
+
+[node name="Area2D5" parent="." unique_id=1052820455 instance=ExtResource("5_2ow8g")]
+position = Vector2(5813, 1423)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

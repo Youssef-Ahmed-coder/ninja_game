@@ -1,0 +1,534 @@
+[gd_scene format=3 uid="uid://5lru7ocgj5aq"]
+
+[ext_resource type="Script" uid="uid://bhi0q2wrjt2cs" path="res://tp.gd" id="1_mn331"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_s3sh2"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_mn331"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qruqo"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_sdr50"]
+
+[sub_resource type="TextMesh" id="TextMesh_5qenf"]
+text = "m"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qruqo"]
+size = Vector2(93, 188)
+
+[node name="Area2D" type="Area2D" unique_id=1052820455]
+scale = Vector2(2, 2)
+script = ExtResource("1_mn331")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1900253769]
+position = Vector2(1, 0)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Node2D" unique_id=1617287806]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(14.750001, 12.750001)
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Node2D" unique_id=1796481209]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(23, -5.999999)
+rotation = 0.5564085
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Node2D" unique_id=729672957]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(7.0000005, -17)
+rotation = 0.5564085
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="Node2D" unique_id=1956936150]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(2.0000005, 7.999998)
+rotation = 0.5564085
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="Node2D" unique_id=1504884691]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-4, 4)
+rotation = 0.5564085
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="Node2D" unique_id=827588705]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-4, 4)
+rotation = 0.16246855
+scale = Vector2(30.500004, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="Node2D" unique_id=1480307488]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-8.999999, 25.999998)
+rotation = 0.16246855
+scale = Vector2(30.500004, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="Node2D" unique_id=869844959]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(10.999999, 37)
+rotation = 0.16246855
+scale = Vector2(30.500004, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="Node2D" unique_id=1064561038]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(17.000002, 40)
+rotation = -0.17542742
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="Node2D" unique_id=1850035822]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-11.999999, 48)
+rotation = -0.17542742
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="Node2D" unique_id=933479050]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-14, 35)
+rotation = 0.33465055
+scale = Vector2(30.5, 26.5)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="Node2D" unique_id=62625989]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-13.000001, 24.999996)
+rotation = 0.33465055
+scale = Vector2(30.5, 26.5)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D13" type="MeshInstance2D" parent="Node2D" unique_id=1670077781]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-4.000003, -7.6293945e-06)
+rotation = 0.33465055
+scale = Vector2(30.5, 26.5)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D14" type="MeshInstance2D" parent="Node2D" unique_id=1476751834]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-18, 46.000004)
+rotation = 0.15322977
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D15" type="MeshInstance2D" parent="Node2D" unique_id=547507988]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(18.999998, 61)
+rotation = 0.15322977
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D16" type="MeshInstance2D" parent="Node2D" unique_id=194093715]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(18.000004, 58.000004)
+rotation = 0.15322977
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D17" type="MeshInstance2D" parent="Node2D" unique_id=1872760632]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(23.000002, 66)
+rotation = -0.16227916
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D18" type="MeshInstance2D" parent="Node2D" unique_id=1787054622]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-7.999996, 71.00001)
+rotation = -0.16227916
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D19" type="MeshInstance2D" parent="Node2D" unique_id=2069747304]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-21.999998, 70)
+rotation = 0.18278158
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D20" type="MeshInstance2D" parent="Node2D" unique_id=104037975]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-23, 88)
+rotation = -0.118971705
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D21" type="MeshInstance2D" parent="Node2D" unique_id=789498953]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(27, 91)
+rotation = -0.118971705
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D22" type="MeshInstance2D" parent="Node2D" unique_id=892683164]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(5, 83)
+rotation = -0.118971705
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D23" type="MeshInstance2D" parent="Node2D" unique_id=1191608139]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(3.0000005, 108)
+rotation = -0.010852456
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D24" type="MeshInstance2D" parent="Node2D" unique_id=189530130]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(27.999996, 109.99999)
+rotation = -0.010852456
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D25" type="MeshInstance2D" parent="Node2D" unique_id=1413934069]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-17.999992, 111)
+rotation = -0.32587594
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D26" type="MeshInstance2D" parent="Node2D" unique_id=1107626979]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-13.000001, 137)
+rotation = -0.05096966
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D27" type="MeshInstance2D" parent="Node2D" unique_id=247749785]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(28, 128)
+rotation = -0.05096966
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D28" type="MeshInstance2D" parent="Node2D" unique_id=2013546700]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(1.9999981, 133)
+rotation = -0.05096966
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D29" type="MeshInstance2D" parent="Node2D" unique_id=801260469]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(10, 136)
+rotation = -0.05096966
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D31" type="MeshInstance2D" parent="Node2D" unique_id=2001558647]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(28.999998, 135.99998)
+rotation = -0.05096966
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="MeshInstance2D30" type="MeshInstance2D" parent="Node2D" unique_id=69614794]
+modulate = Color(0.41981313, 0.41981313, 0.4198131, 1)
+position = Vector2(-1.9987068, 0.050964355)
+rotation = -0.05096966
+scale = Vector2(30.500002, 26.500002)
+mesh = SubResource("BoxMesh_s3sh2")
+
+[node name="Node2D2" type="Node2D" parent="." unique_id=1364500227]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Node2D2" unique_id=689808678]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(2.25, -4.5)
+scale = Vector2(5.5, 3)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Node2D2" unique_id=2129538420]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(4.2500014, -4.5)
+scale = Vector2(5.5, 1.0000001)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Node2D2" unique_id=419820038]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(3.2500014, -2.5)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="Node2D2" unique_id=1916709400]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(6.2500014, -3.5)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="Node2D2" unique_id=762936780]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(13, 0)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="Node2D2" unique_id=2016372307]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(10, -3.9999998)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D13" type="MeshInstance2D" parent="Node2D2" unique_id=1587439822]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(14, -4)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D14" type="MeshInstance2D" parent="Node2D2" unique_id=1122292008]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(12.000001, -3)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D15" type="MeshInstance2D" parent="Node2D2" unique_id=1986293501]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(13, -3.0000002)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D16" type="MeshInstance2D" parent="Node2D2" unique_id=1415565182]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(14.000001, -3)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D17" type="MeshInstance2D" parent="Node2D2" unique_id=1888760149]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(2.0000002, -4)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D18" type="MeshInstance2D" parent="Node2D2" unique_id=1961076224]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(2.0000002, -4)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="Node2D2" unique_id=537469206]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(9.000001, -2)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="Node2D2" unique_id=318249247]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(7.0000014, -1.1920929e-07)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="Node2D2" unique_id=1848815341]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(2.0000002, -0.9999999)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="Node2D2" unique_id=17005725]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(4, -0.9999999)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="Node2D2" unique_id=546032072]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(9, -0.9999999)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="Node2D2" unique_id=1318946008]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(9, -0.9999999)
+scale = Vector2(5.5, 5)
+mesh = SubResource("PrismMesh_mn331")
+
+[node name="MeshInstance2D19" type="MeshInstance2D" parent="Node2D2" unique_id=1301142761]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(-11.125, 40.125)
+scale = Vector2(10.25, 3.750002)
+mesh = SubResource("BoxMesh_qruqo")
+
+[node name="MeshInstance2D22" type="MeshInstance2D" parent="Node2D2" unique_id=490551590]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(-12.125001, 44.125)
+scale = Vector2(10.25, 3.750002)
+mesh = SubResource("BoxMesh_qruqo")
+
+[node name="MeshInstance2D23" type="MeshInstance2D" parent="Node2D2" unique_id=1551814220]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(-12.125001, 42.125)
+scale = Vector2(10.25, 3.750002)
+mesh = SubResource("BoxMesh_qruqo")
+
+[node name="MeshInstance2D24" type="MeshInstance2D" parent="Node2D2" unique_id=1238493326]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(-12.125001, 40.125)
+scale = Vector2(10.25, 3.750002)
+mesh = SubResource("BoxMesh_qruqo")
+
+[node name="MeshInstance2D25" type="MeshInstance2D" parent="Node2D2" unique_id=1044421796]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(-12.125001, 44.125)
+scale = Vector2(10.25, 3.750002)
+mesh = SubResource("BoxMesh_qruqo")
+
+[node name="MeshInstance2D26" type="MeshInstance2D" parent="Node2D2" unique_id=536422818]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(-12.125001, 44.125)
+scale = Vector2(10.25, 3.750002)
+mesh = SubResource("BoxMesh_qruqo")
+
+[node name="MeshInstance2D20" type="MeshInstance2D" parent="Node2D2" unique_id=1386719865]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(-7.6250005, 40.125)
+scale = Vector2(7.250001, 3.750002)
+mesh = SubResource("BoxMesh_qruqo")
+
+[node name="MeshInstance2D28" type="MeshInstance2D" parent="Node2D2" unique_id=1233181783]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(-17, 44)
+scale = Vector2(10.25, 3.750002)
+mesh = SubResource("BoxMesh_qruqo")
+
+[node name="MeshInstance2D21" type="MeshInstance2D" parent="Node2D2" unique_id=154935707]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(21.999996, 47)
+scale = Vector2(10.25, 3.750002)
+mesh = SubResource("BoxMesh_qruqo")
+
+[node name="MeshInstance2D32" type="MeshInstance2D" parent="Node2D2" unique_id=580166672]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(1, 0)
+scale = Vector2(7.758505, 4.625002)
+mesh = SubResource("SphereMesh_sdr50")
+
+[node name="MeshInstance2D29" type="MeshInstance2D" parent="Node2D2" unique_id=405225928]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(-13, 81)
+scale = Vector2(-113.268074, -139.13968)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D30" type="MeshInstance2D" parent="Node2D2" unique_id=1670623564]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(-13.999999, 83.99999)
+rotation = -1.6686022
+scale = Vector2(-113.268074, -139.13968)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D31" type="MeshInstance2D" parent="Node2D2" unique_id=1676946121]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(-13.999999, 83.99999)
+rotation = -2.4021897
+scale = Vector2(-113.268074, -139.13968)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D33" type="MeshInstance2D" parent="Node2D2" unique_id=37575182]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(-13.999999, 83.99999)
+rotation = -3.2221336
+scale = Vector2(-113.268074, -139.13968)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D34" type="MeshInstance2D" parent="Node2D2" unique_id=1691539032]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(-13.999999, 83.99999)
+rotation = -4.0000863
+scale = Vector2(-113.268074, -139.13968)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D35" type="MeshInstance2D" parent="Node2D2" unique_id=482312175]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(-13.999999, 83.99999)
+rotation = -4.6135426
+scale = Vector2(-113.268074, -139.13968)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D36" type="MeshInstance2D" parent="Node2D2" unique_id=1153939699]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(-13.999999, 83.99999)
+rotation = -5.3090887
+scale = Vector2(-113.268074, -139.13968)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D37" type="MeshInstance2D" parent="Node2D2" unique_id=1291222996]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(-13.999999, 83.99999)
+rotation = -6.083333
+scale = Vector2(-113.268074, -139.13968)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D38" type="MeshInstance2D" parent="Node2D2" unique_id=303621433]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(-13.999999, 83.99999)
+rotation = -6.9304748
+scale = Vector2(-113.268074, -139.13968)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D39" type="MeshInstance2D" parent="Node2D2" unique_id=1673033963]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(-13.999999, 83.99999)
+rotation = -7.5332274
+scale = Vector2(-113.268074, -139.13968)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D40" type="MeshInstance2D" parent="Node2D2" unique_id=92565121]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(5.000003, 61)
+rotation = -7.5332274
+scale = Vector2(-56.582066, -65.9773)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D41" type="MeshInstance2D" parent="Node2D2" unique_id=1423100729]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(5.000003, 61)
+rotation = -8.6381445
+scale = Vector2(-56.582066, -65.9773)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D42" type="MeshInstance2D" parent="Node2D2" unique_id=478627678]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(5.000003, 61)
+rotation = -9.829446
+scale = Vector2(-56.582066, -65.9773)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D43" type="MeshInstance2D" parent="Node2D2" unique_id=1541298396]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(5.000003, 61)
+rotation = -11.028317
+scale = Vector2(-56.582066, -65.9773)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D44" type="MeshInstance2D" parent="Node2D2" unique_id=1441708977]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(5.000003, 61)
+rotation = -12.337695
+scale = Vector2(-56.582066, -65.9773)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D45" type="MeshInstance2D" parent="Node2D2" unique_id=1137137467]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(5.000003, 61)
+rotation = -13.549908
+scale = Vector2(-56.582066, -65.9773)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="MeshInstance2D46" type="MeshInstance2D" parent="Node2D2" unique_id=1501533919]
+modulate = Color(0, 0.9607843, 0.9607843, 1)
+position = Vector2(5.000003, 61)
+rotation = -13.551061
+scale = Vector2(-56.582066, -65.9773)
+mesh = SubResource("TextMesh_5qenf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1141012111]
+position = Vector2(4, 60.5)
+shape = SubResource("RectangleShape2D_qruqo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

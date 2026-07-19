@@ -1,0 +1,260 @@
+[gd_scene format=3 uid="uid://b4fe5s2vethao"]
+
+[ext_resource type="PackedScene" uid="uid://b43jpbmthx7ru" path="res://spik2.tscn" id="1_6lj1s"]
+[ext_resource type="Texture2D" uid="uid://jst753mrfhgi" path="res://Bush (2).png" id="2_0kory"]
+[ext_resource type="Texture2D" uid="uid://din5qxl2hv33q" path="res://Bush (1).png" id="3_ajpv3"]
+[ext_resource type="PackedScene" uid="uid://d0b17p3qdou47" path="res://player.tscn" id="4_6txjp"]
+[ext_resource type="PackedScene" uid="uid://qi2v1cnwx8rf" path="res://man.tscn" id="5_yusrn"]
+[ext_resource type="PackedScene" uid="uid://puj4psevluid" path="res://star.tscn" id="6_ajpv3"]
+[ext_resource type="PackedScene" uid="uid://5lru7ocgj5aq" path="res://tp.tscn" id="7_6txjp"]
+[ext_resource type="PackedScene" uid="uid://cy8uysivig74e" path="res://sword.tscn" id="8_6txjp"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_axdus"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_easu5"]
+size = Vector2(1882, 256)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wm8e1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bb5d8"]
+size = Vector2(80, 200)
+
+[node name="Node2D" type="Node2D" unique_id=1674555155]
+
+[node name="Node2D" parent="." unique_id=2143504759 instance=ExtResource("1_6lj1s")]
+position = Vector2(-488, -88)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1893539106]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D" unique_id=1363833208]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(583.87506, 504)
+scale = Vector2(1856.2499, 255.99998)
+mesh = SubResource("BoxMesh_axdus")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1180311727]
+position = Vector2(592, 504)
+shape = SubResource("RectangleShape2D_easu5")
+
+[node name="Bush(2)3" type="Sprite2D" parent="StaticBody2D/CollisionShape2D" unique_id=1747846543]
+modulate = Color(0.0142752165, 0.014275218, 0.014275218, 1)
+position = Vector2(264, -168)
+texture = ExtResource("2_0kory")
+
+[node name="Bush(1)" type="Sprite2D" parent="StaticBody2D/CollisionShape2D/Bush(2)3" unique_id=835234623]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(-31.999939, -34)
+rotation = -0.39418957
+scale = Vector2(1, 1.1273848)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)2" type="Sprite2D" parent="StaticBody2D/CollisionShape2D/Bush(2)3" unique_id=2079290136]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(37, -42)
+rotation = 0.48866063
+scale = Vector2(1, 1.1273847)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)3" type="Sprite2D" parent="StaticBody2D/CollisionShape2D/Bush(2)3" unique_id=186922307]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(-48.99994, -74.000015)
+rotation = -0.28146547
+scale = Vector2(1, 1.1273847)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)4" type="Sprite2D" parent="StaticBody2D/CollisionShape2D/Bush(2)3" unique_id=432559793]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(24, -79.999985)
+rotation = 0.20836633
+scale = Vector2(1, 1.1273848)
+texture = ExtResource("3_ajpv3")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=500488956]
+position = Vector2(-1456, 0)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D2" unique_id=1696603197]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(583.87506, 504)
+scale = Vector2(1856.2499, 255.99998)
+mesh = SubResource("BoxMesh_axdus")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1651664633]
+position = Vector2(592, 504)
+shape = SubResource("RectangleShape2D_easu5")
+
+[node name="Bush(2)2" type="Sprite2D" parent="." unique_id=846011760]
+modulate = Color(0.0142752165, 0.014275218, 0.014275218, 1)
+position = Vector2(1368, 344)
+texture = ExtResource("2_0kory")
+
+[node name="Bush(1)" type="Sprite2D" parent="Bush(2)2" unique_id=1592699589]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(-31.999939, -34)
+rotation = -0.39418957
+scale = Vector2(1, 1.1273848)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)2" type="Sprite2D" parent="Bush(2)2" unique_id=811553833]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(37, -42)
+rotation = 0.48866063
+scale = Vector2(1, 1.1273847)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)3" type="Sprite2D" parent="Bush(2)2" unique_id=573925234]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(-48.99994, -74.000015)
+rotation = -0.28146547
+scale = Vector2(1, 1.1273847)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)4" type="Sprite2D" parent="Bush(2)2" unique_id=186023824]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(24, -79.999985)
+rotation = 0.20836633
+scale = Vector2(1, 1.1273848)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(2)3" type="Sprite2D" parent="." unique_id=1735213119]
+modulate = Color(0.0142752165, 0.014275218, 0.014275218, 1)
+position = Vector2(1120, 344)
+texture = ExtResource("2_0kory")
+
+[node name="Bush(1)" type="Sprite2D" parent="Bush(2)3" unique_id=1444624142]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(-31.999939, -34)
+rotation = -0.39418957
+scale = Vector2(1, 1.1273848)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)2" type="Sprite2D" parent="Bush(2)3" unique_id=1540763232]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(37, -42)
+rotation = 0.48866063
+scale = Vector2(1, 1.1273847)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)3" type="Sprite2D" parent="Bush(2)3" unique_id=335041288]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(-48.99994, -74.000015)
+rotation = -0.28146547
+scale = Vector2(1, 1.1273847)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)4" type="Sprite2D" parent="Bush(2)3" unique_id=745849651]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(24, -79.999985)
+rotation = 0.20836633
+scale = Vector2(1, 1.1273848)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(2)4" type="Sprite2D" parent="." unique_id=1400128158]
+modulate = Color(0.0142752165, 0.014275218, 0.014275218, 1)
+position = Vector2(568, 344)
+texture = ExtResource("2_0kory")
+
+[node name="Bush(1)" type="Sprite2D" parent="Bush(2)4" unique_id=2020746444]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(-31.999939, -34)
+rotation = -0.39418957
+scale = Vector2(1, 1.1273848)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)2" type="Sprite2D" parent="Bush(2)4" unique_id=1967434125]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(37, -42)
+rotation = 0.48866063
+scale = Vector2(1, 1.1273847)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)3" type="Sprite2D" parent="Bush(2)4" unique_id=819007708]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(-48.99994, -74.000015)
+rotation = -0.28146547
+scale = Vector2(1, 1.1273847)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)4" type="Sprite2D" parent="Bush(2)4" unique_id=2055795881]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(24, -79.999985)
+rotation = 0.20836633
+scale = Vector2(1, 1.1273848)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(2)5" type="Sprite2D" parent="." unique_id=639781969]
+modulate = Color(0.0142752165, 0.014275218, 0.014275218, 1)
+position = Vector2(-8, 352)
+texture = ExtResource("2_0kory")
+
+[node name="Bush(1)" type="Sprite2D" parent="Bush(2)5" unique_id=764942537]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(-31.999939, -34)
+rotation = -0.39418957
+scale = Vector2(1, 1.1273848)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)2" type="Sprite2D" parent="Bush(2)5" unique_id=50059469]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(32.104492, -33.912964)
+rotation = 0.48866063
+scale = Vector2(1, 1.1273847)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)3" type="Sprite2D" parent="Bush(2)5" unique_id=1790438391]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(-48.99994, -74.000015)
+rotation = -0.28146547
+scale = Vector2(1, 1.1273847)
+texture = ExtResource("3_ajpv3")
+
+[node name="Bush(1)4" type="Sprite2D" parent="Bush(2)5" unique_id=23291631]
+modulate = Color(0.00566115, 0.005661152, 0.005661148, 1)
+position = Vector2(24, -79.999985)
+rotation = 0.20836633
+scale = Vector2(1, 1.1273848)
+texture = ExtResource("3_ajpv3")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="." unique_id=931316428]
+position = Vector2(-483, 373)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D4" unique_id=665608627]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(39.41443, -98.607414)
+scale = Vector2(79.82886, 198.21483)
+mesh = SubResource("BoxMesh_wm8e1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4" unique_id=373811567]
+position = Vector2(39.328857, -97.71481)
+shape = SubResource("RectangleShape2D_bb5d8")
+
+[node name="Node2D2" parent="." unique_id=2113718356 instance=ExtResource("1_6lj1s")]
+position = Vector2(-1424, -88)
+
+[node name="Node2D3" parent="." unique_id=1066263850 instance=ExtResource("1_6lj1s")]
+position = Vector2(367, -80)
+
+[node name="CharacterBody2D" parent="." unique_id=624796535 instance=ExtResource("4_6txjp")]
+position = Vector2(1216, 184)
+
+[node name="man" parent="." unique_id=1690872972 instance=ExtResource("5_yusrn")]
+position = Vector2(568, 248)
+
+[node name="man2" parent="." unique_id=1576604091 instance=ExtResource("5_yusrn")]
+position = Vector2(-224, 244)
+
+[node name="man3" parent="." unique_id=2090279445 instance=ExtResource("5_yusrn")]
+position = Vector2(-656, 244)
+
+[node name="Area2D" parent="." unique_id=969222244 instance=ExtResource("6_ajpv3")]
+
+[node name="Area2D2" parent="." unique_id=2103570463 instance=ExtResource("6_ajpv3")]
+position = Vector2(816, -16)
+
+[node name="Area2D3" parent="." unique_id=1170867211 instance=ExtResource("6_ajpv3")]
+position = Vector2(-960, 8)
+
+[node name="Area2D4" parent="." unique_id=1052820455 instance=ExtResource("7_6txjp")]
+position = Vector2(-1498, 80)
+
+[node name="sword" parent="." unique_id=450239838 instance=ExtResource("8_6txjp")]
+position = Vector2(1032, 200)
